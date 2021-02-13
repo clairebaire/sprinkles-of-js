@@ -1,0 +1,30 @@
+.sprinkles {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 80em;
+  width: 100%;
+  gap: 1rem;
+  flex: 0 0 auto;
+  padding: 1rem;
+  margin: 0 auto;
+
+  .sprinkles__header {
+    flex: 1 0 auto;
+    max-height: 4rem;
+
+    &--hero {
+      max-height: 16rem;
+    }
+  }
+
+  .sprinkles__footer {
+    flex: 0 0 auto;
+    max-height: 2rem;
+  }
+
+  .sprinkles__main {
+    flex: 1 1 auto;
+    height: 100%;
+  }
+}

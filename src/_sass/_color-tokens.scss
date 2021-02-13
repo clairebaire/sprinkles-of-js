@@ -1,0 +1,41 @@
+/* 🛑 STOP!
+  Do not change this file directly.
+  Modify colors in color-tokens.js
+ */
+
+$color-gunmetal: #30343f !default;
+$color-on-gunmetal: #989CA5 !default;
+$color-ghost-white: #fafaff !default;
+$color-on-ghost-white: #73737D !default;
+$color-lavender: #e4d9ff !default;
+$color-on-lavender: #6A5992 !default;
+$color-space: #273469 !default;
+$color-on-space: #969FC2 !default;
+$color-better-space: #1e2749 !default;
+$color-on-better-space: #868FAD !default;
+
+$color-tokens: (
+  "color-gunmetal": $color-gunmetal,
+  "color-on-gunmetal": $color-on-gunmetal,
+  "color-ghost-white": $color-ghost-white,
+  "color-on-ghost-white": $color-on-ghost-white,
+  "color-lavender": $color-lavender,
+  "color-on-lavender": $color-on-lavender,
+  "color-space": $color-space,
+  "color-on-space": $color-on-space,
+  "color-better-space": $color-better-space,
+  "color-on-better-space": $color-on-better-space
+) !default;
+
+@mixin color-tokens() {
+  --color-gunmetal: #{$color-gunmetal};
+  --color-on-gunmetal: #{$color-on-gunmetal};
+  --color-ghost-white: #{$color-ghost-white};
+  --color-on-ghost-white: #{$color-on-ghost-white};
+  --color-lavender: #{$color-lavender};
+  --color-on-lavender: #{$color-on-lavender};
+  --color-space: #{$color-space};
+  --color-on-space: #{$color-on-space};
+  --color-better-space: #{$color-better-space};
+  --color-on-better-space: #{$color-on-better-space};
+}
