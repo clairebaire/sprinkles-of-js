@@ -1,4 +1,19 @@
+code {
+  color: #413f8e;
+  background-color: $color-lavender;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1px 3px;
+  margin: -1px;
+}
+
+a code {
+  background-color: #33998944;
+  color: $color-on-persian-green;
+}
+
 pre {
-  background: $color-gunmetal;
+  background-color: $color-gunmetal;
   color: $color-on-gunmetal;
+  margin: 0;
 }

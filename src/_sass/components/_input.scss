@@ -1,0 +1,37 @@
+.input {
+
+  .input__label {
+    color: $color-on-lavender;
+    font-size: 1.25rem;
+  }
+
+  input {
+    appearance: none;
+    background: transparent;
+    border: 1px solid $color-space;
+    border-radius: 4px;
+    height: 6ex;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+  }
+
+  input:focus {
+    outline: 1px solid $color-on-lavender;
+    outline-offset: -2px;
+  }
+
+  &--small {
+    .input__label {
+      position: absolute;
+      left: -9999px;
+      width: 0;
+      height: 0;
+    }
+
+    input {
+      height: 4ex;
+      padding: 0;
+    }
+  }
+}

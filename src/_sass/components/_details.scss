@@ -1,0 +1,27 @@
+details {
+  margin-bottom: 1rem;
+
+  &[open] {
+    summary {
+      border-top-right-radius: .5em;
+      border-top-left-radius: .5em;
+    }
+  }
+
+  &:not([open]) {
+    summary {
+      border-radius: .5em;
+    }
+  }
+
+  summary {
+    padding: 0 1rem;
+    background-color: $color-gunmetal;
+    color: $color-ghost-white;
+  }
+
+  pre {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+  }
+}

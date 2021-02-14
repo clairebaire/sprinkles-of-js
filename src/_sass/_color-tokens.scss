@@ -13,6 +13,12 @@ $color-space: #273469 !default;
 $color-on-space: #969FC2 !default;
 $color-better-space: #1e2749 !default;
 $color-on-better-space: #868FAD !default;
+$color-corn: #f7ec59 !default;
+$color-on-corn: #716A12 !default;
+$color-red-salsa: #f93943 !default;
+$color-on-red-salsa: #460003 !default;
+$color-persian-green: #339989 !default;
+$color-on-persian-green: #0B2908 !default;
 
 $color-tokens: (
   "color-gunmetal": $color-gunmetal,
@@ -24,7 +30,13 @@ $color-tokens: (
   "color-space": $color-space,
   "color-on-space": $color-on-space,
   "color-better-space": $color-better-space,
-  "color-on-better-space": $color-on-better-space
+  "color-on-better-space": $color-on-better-space,
+  "color-corn": $color-corn,
+  "color-on-corn": $color-on-corn,
+  "color-red-salsa": $color-red-salsa,
+  "color-on-red-salsa": $color-on-red-salsa,
+  "color-persian-green": $color-persian-green,
+  "color-on-persian-green": $color-on-persian-green
 ) !default;
 
 @mixin color-tokens() {
@@ -38,4 +50,10 @@ $color-tokens: (
   --color-on-space: #{$color-on-space};
   --color-better-space: #{$color-better-space};
   --color-on-better-space: #{$color-on-better-space};
+  --color-corn: #{$color-corn};
+  --color-on-corn: #{$color-on-corn};
+  --color-red-salsa: #{$color-red-salsa};
+  --color-on-red-salsa: #{$color-on-red-salsa};
+  --color-persian-green: #{$color-persian-green};
+  --color-on-persian-green: #{$color-on-persian-green};
 }

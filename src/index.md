@@ -2,17 +2,16 @@
 layout: front-page.njk
 title: Sprinkles of JS
 ---
-# {{ title }}
 
-Framework this, library that. What if you want to do a simple task in JavaScript?
+## Why?
+Let's say the cupcake (🧁) is a metaphor. The cupcake is a library. The sprinkles are what you _really_ want. You can have the cupcake later.
 
-Before you reach for a framework (even the ones that are tree-shakable, the ultimate "this is fine" maneuver), take a look here. Look at the function provided. Really take it in.
+Framework this, library that. What if you want to do a simple task in JavaScript? Before you reach for a framework (even the ones that are tree-shakable, the ultimate "this is fine" maneuver), take a look here. Look at the function provided. Really take it in.
 
-Coding is _always_ a choice. Dependencies need to be updated. A singleton function? Not so much!
+**Deadlines always factor into the discussion.** But consider the amount of time it might take to read documentation for a library, when really, all you need to do is check if something is an array. Or send a get request.
 
-Try it out.
+This site is for you. Definitely inspired by both [@5t3ph's SmolCSS](https://smolcss.dev) and [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
 
-<label>
-  Search a keyword
-  <input type="search">
-</label>
+## Can I contribute?
+
+Sure! (rules TBD)

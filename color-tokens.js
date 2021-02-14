@@ -19,5 +19,17 @@ module.exports = [
   {
     name: "better-space",
     color: "#1e2749"
+  },
+  {
+    name: "corn",
+    color: "#f7ec59"
+  },
+  {
+    name: "red-salsa",
+    color: "#f93943"
+  },
+  {
+    name: "persian-green",
+    color: "#339989"
   }
 ];

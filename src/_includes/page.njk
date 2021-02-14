@@ -3,8 +3,23 @@ layout: index.njk
 ---
 
 <header class="sprinkles__header">
-  <a href="/">Sprinkles</a>Header stuff!
+  <div class="split">
+    <div>
+      🧁 <a href="/">Sprinkles of JS</a>
+    </div>
+    <div>
+      <div class="h-list">
+        <label class="input input--small">
+          <span class="input__label">Search by keyword</span>
+          <input type="search" placeholder="search...">
+        </label>
+        <span>Github</span>
+      </div>
+    </div>
+  </div>
 </header>
 <main class="sprinkles__main">
+  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({ listElement: "ul", listItemElement: "li", listClass: "breadcrumb"}) | safe }}
+
   {{ content | safe }}
 </main>
