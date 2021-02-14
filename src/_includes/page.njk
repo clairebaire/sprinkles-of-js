@@ -19,7 +19,5 @@ layout: index.njk
   </div>
 </header>
 <main class="sprinkles__main">
-  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({ listElement: "ul", listItemElement: "li", listClass: "breadcrumb"}) | safe }}
-
   {{ content | safe }}
 </main>
