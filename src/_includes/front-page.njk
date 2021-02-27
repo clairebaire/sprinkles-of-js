@@ -7,7 +7,7 @@ layout: index.njk
     <span class="h1">🧁</span>
     <h1>Sprinkles of JS</h1>
   </div>
-  <form action="/.netlify/functions/search" method="GET">
+  <form id="form">
     <div class="h-list">
       <label class="input">
         Search by keyword
@@ -16,6 +16,7 @@ layout: index.njk
       <button class="btn">Search</button>
     </div>
   </form>
+  <div id="results"></div>
 </header>
 <main class="sprinkles__main">
   <h2>Featured Items</h2>
@@ -28,3 +29,25 @@ layout: index.njk
   </ul>
   {{ content | safe }}
 </main>
+
+
+<script>
+const submitSearch = (event) => {
+  event.preventDefault();
+  let searchValue = event.srcElement.elements[0].value;
+
+  fetch(`/.netlify/functions/search?=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
+}
+
+const formulateSearchResult = (json) => {
+  let results = document.querySelector('#results');
+  if (json) {
+    json.forEach(item => console.log(item))
+  } else {
+    results.innerText = "No results to display!";
+  }
+}
+
+const form = document.querySelector('#form')
+form.onsubmit = submitSearch
+</script>
