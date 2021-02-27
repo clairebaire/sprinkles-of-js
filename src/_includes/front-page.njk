@@ -35,11 +35,18 @@ layout: index.njk
 const submitSearch = (event) => {
   event.preventDefault();
   let searchValue = event.srcElement.elements[0].value;
-
-  fetch(`/.netlify/functions/search?search=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
+  let results = document.querySelector('#results');
+  results.innerHTML = "Loading...";
+  fetch(`/.netlify/functions/search?search=${searchValue}`).then((data) => {
+    if (data) {
+      data.json()
+    } else {
+      formulateSearchResult();
+    }
+  }).then((json) => formulateSearchResult(json))
 }
 
-const formulateSearchResult = (json) => {
+const formulateSearchResult = (json = null) => {
   let results = document.querySelector('#results');
   let toWrite = document.createElement('ul');
   if (json) {
