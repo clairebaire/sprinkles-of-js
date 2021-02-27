@@ -2,6 +2,7 @@
 layout: page.njk
 tags: featured
 title: Get Indicies of Each Occurrence
+searchTags: ['index', 'array', 'search']
 eleventyNavigation:
   key: Get Indicies of Each Occurrence
   parent: Arrays
@@ -17,7 +18,7 @@ This uses a combination of [`Array.reduce()`](https://developer.mozilla.org/en-U
 <details open>
   <summary>JavaScript</summary>
   
-  ```javascript
+```javascript
 // Find All Indicies
 const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
 
@@ -30,7 +31,7 @@ indexOfAll([1, 2, 3], 4); // []
 <details>
   <summary>TypeScript</summary>
   
-  ```typescript
+```typescript
 // Find All Indicies
 const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
 

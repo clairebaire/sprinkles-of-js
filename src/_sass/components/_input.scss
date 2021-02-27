@@ -1,23 +1,23 @@
 .input {
-
   .input__label {
-    color: $color-on-lavender;
+    color: $color-caribbean-green;
     font-size: 1.25rem;
   }
 
   input {
     appearance: none;
     background: transparent;
-    border: 1px solid $color-space;
+    color: $color-laser-lemon;
+    border: 1px solid $color-caribbean-green;
     border-radius: 4px;
-    height: 6ex;
+    height: 5ex;
     width: 100%;
     padding: .5rem;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   input:focus {
-    outline: 1px solid $color-on-lavender;
+    outline: 1px solid $color-laser-lemon;
     outline-offset: -2px;
   }
 

@@ -3,57 +3,45 @@
   Modify colors in color-tokens.js
  */
 
-$color-gunmetal: #30343f !default;
-$color-on-gunmetal: #989CA5 !default;
-$color-ghost-white: #fafaff !default;
-$color-on-ghost-white: #73737D !default;
-$color-lavender: #e4d9ff !default;
-$color-on-lavender: #6A5992 !default;
-$color-space: #273469 !default;
-$color-on-space: #969FC2 !default;
-$color-better-space: #1e2749 !default;
-$color-on-better-space: #868FAD !default;
-$color-corn: #f7ec59 !default;
-$color-on-corn: #716A12 !default;
-$color-red-salsa: #f93943 !default;
-$color-on-red-salsa: #460003 !default;
-$color-persian-green: #339989 !default;
-$color-on-persian-green: #0B2908 !default;
+$color-black-fogra: #0a0908 !default;
+$color-on-black-fogra: #797876 !default;
+$color-baby-blue: #6ccff6 !default;
+$color-on-baby-blue: #1D576E !default;
+$color-paradise-pink: #ef476f !default;
+$color-on-paradise-pink: #460414 !default;
+$color-laser-lemon: #f7ff58 !default;
+$color-on-laser-lemon: #717611 !default;
+$color-caribbean-green: #06d6a0 !default;
+$color-on-caribbean-green: #47502D !default;
+$color-hot-pink: #ff66b3 !default;
+$color-on-hot-pink: #64153D !default;
 
 $color-tokens: (
-  "color-gunmetal": $color-gunmetal,
-  "color-on-gunmetal": $color-on-gunmetal,
-  "color-ghost-white": $color-ghost-white,
-  "color-on-ghost-white": $color-on-ghost-white,
-  "color-lavender": $color-lavender,
-  "color-on-lavender": $color-on-lavender,
-  "color-space": $color-space,
-  "color-on-space": $color-on-space,
-  "color-better-space": $color-better-space,
-  "color-on-better-space": $color-on-better-space,
-  "color-corn": $color-corn,
-  "color-on-corn": $color-on-corn,
-  "color-red-salsa": $color-red-salsa,
-  "color-on-red-salsa": $color-on-red-salsa,
-  "color-persian-green": $color-persian-green,
-  "color-on-persian-green": $color-on-persian-green
+  "color-black-fogra": $color-black-fogra,
+  "color-on-black-fogra": $color-on-black-fogra,
+  "color-baby-blue": $color-baby-blue,
+  "color-on-baby-blue": $color-on-baby-blue,
+  "color-paradise-pink": $color-paradise-pink,
+  "color-on-paradise-pink": $color-on-paradise-pink,
+  "color-laser-lemon": $color-laser-lemon,
+  "color-on-laser-lemon": $color-on-laser-lemon,
+  "color-caribbean-green": $color-caribbean-green,
+  "color-on-caribbean-green": $color-on-caribbean-green,
+  "color-hot-pink": $color-hot-pink,
+  "color-on-hot-pink": $color-on-hot-pink
 ) !default;
 
 @mixin color-tokens() {
-  --color-gunmetal: #{$color-gunmetal};
-  --color-on-gunmetal: #{$color-on-gunmetal};
-  --color-ghost-white: #{$color-ghost-white};
-  --color-on-ghost-white: #{$color-on-ghost-white};
-  --color-lavender: #{$color-lavender};
-  --color-on-lavender: #{$color-on-lavender};
-  --color-space: #{$color-space};
-  --color-on-space: #{$color-on-space};
-  --color-better-space: #{$color-better-space};
-  --color-on-better-space: #{$color-on-better-space};
-  --color-corn: #{$color-corn};
-  --color-on-corn: #{$color-on-corn};
-  --color-red-salsa: #{$color-red-salsa};
-  --color-on-red-salsa: #{$color-on-red-salsa};
-  --color-persian-green: #{$color-persian-green};
-  --color-on-persian-green: #{$color-on-persian-green};
+  --color-black-fogra: #{$color-black-fogra};
+  --color-on-black-fogra: #{$color-on-black-fogra};
+  --color-baby-blue: #{$color-baby-blue};
+  --color-on-baby-blue: #{$color-on-baby-blue};
+  --color-paradise-pink: #{$color-paradise-pink};
+  --color-on-paradise-pink: #{$color-on-paradise-pink};
+  --color-laser-lemon: #{$color-laser-lemon};
+  --color-on-laser-lemon: #{$color-on-laser-lemon};
+  --color-caribbean-green: #{$color-caribbean-green};
+  --color-on-caribbean-green: #{$color-on-caribbean-green};
+  --color-hot-pink: #{$color-hot-pink};
+  --color-on-hot-pink: #{$color-on-hot-pink};
 }

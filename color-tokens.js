@@ -1,35 +1,27 @@
 // Example of expected format
 module.exports = [
   {
-    name: "gunmetal",
-    color: "#30343f",
+    name: "black-fogra",
+    color: "#0a0908",
   },
   {
-    name: "ghost-white",
-    color: "#fafaff",
+    name: "baby-blue",
+    color: "#6ccff6",
   },
   {
-    name: "lavender",
-    color: "#e4d9ff",
+    name: "paradise-pink",
+    color: "#ef476f",
   },
   {
-    name: "space",
-    color: "#273469",
+    name: "laser-lemon",
+    color: "#f7ff58",
   },
   {
-    name: "better-space",
-    color: "#1e2749"
+    name: "caribbean-green",
+    color: "#06d6a0"
   },
   {
-    name: "corn",
-    color: "#f7ec59"
+    name: "hot-pink",
+    color: "#ff66b3"
   },
-  {
-    name: "red-salsa",
-    color: "#f93943"
-  },
-  {
-    name: "persian-green",
-    color: "#339989"
-  }
 ];

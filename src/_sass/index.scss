@@ -1,5 +1,6 @@
 @import './color-tokens';
 
+@import './components/button';
 @import './components/details';
 @import './components/input';
 @import './components/typography';
@@ -22,8 +23,8 @@ body {
   min-height: 100vh;
   display: flex;
   margin: 0;
-  background-color: $color-ghost-white;
-  color: $color-gunmetal;
+  background-color: $color-black-fogra;
+  color: $color-on-black-fogra;
 }
 
 h1, h2, h3, h4, h5,
@@ -31,7 +32,7 @@ h1, h2, h3, h4, h5,
   margin: 3rem 0 1.38rem;
   font-family: 'Lora', serif;
   font-weight: 500;
-  color: $color-better-space;
+  color: $color-laser-lemon;
   line-height: 1.3;
 }
 

@@ -1,5 +1,6 @@
 details {
   margin-bottom: 1rem;
+  border: 1px solid $color-paradise-pink;
 
   &[open] {
     summary {
@@ -16,8 +17,8 @@ details {
 
   summary {
     padding: 0 1rem;
-    background-color: $color-gunmetal;
-    color: $color-ghost-white;
+    background-color: $color-black-fogra;
+    color: $color-laser-lemon;
   }
 
   pre {

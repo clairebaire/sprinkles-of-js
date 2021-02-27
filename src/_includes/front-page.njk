@@ -7,10 +7,15 @@ layout: index.njk
     <span class="h1">🧁</span>
     <h1>Sprinkles of JS</h1>
   </div>
-  <label class="input">
-    Search by keyword
-    <input type="search">
-  </label>
+  <form action="/.netlify/functions/search" method="GET">
+    <div class="h-list">
+      <label class="input">
+        Search by keyword
+        <input type="search" name="search">
+      </label>
+      <button class="btn">Search</button>
+    </div>
+  </form>
 </header>
 <main class="sprinkles__main">
   <h2>Featured Items</h2>

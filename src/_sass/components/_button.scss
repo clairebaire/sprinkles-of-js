@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  appearance: none;
+  border: 1px solid $color-caribbean-green;
+  border-radius: 8px;
+  margin: 0;
+  max-width: 100%;
+  height: 5ex;
+  background-color: transparent;
+  color: $color-caribbean-green;
+  font-size: 1.125rem;
+
+  &:focus,
+  &:active {
+    outline: 1px solid $color-laser-lemon;
+    outline-offset: -2px;
+  }
+}

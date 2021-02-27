@@ -2,106 +2,68 @@
 
 > The following are contrast safe combinations as calculated for _normal_ text based on WCAG AA 4.5
 
-## color-gunmetal
-  - `color-on-gunmetal`
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-on-space`
-  - `color-corn`
+## color-black-fogra
+  - `color-on-black-fogra`
+  - `color-baby-blue`
+  - `color-paradise-pink`
+  - `color-laser-lemon`
+  - `color-caribbean-green`
+  - `color-hot-pink`
 
-## color-on-gunmetal
-  - `color-gunmetal`
-  - `color-better-space`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-on-black-fogra
+  - `color-black-fogra`
 
-## color-ghost-white
-  - `color-gunmetal`
-  - `color-on-ghost-white`
-  - `color-on-lavender`
-  - `color-space`
-  - `color-better-space`
-  - `color-on-corn`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-baby-blue
+  - `color-black-fogra`
+  - `color-on-baby-blue`
+  - `color-on-paradise-pink`
+  - `color-on-caribbean-green`
+  - `color-on-hot-pink`
 
-## color-on-ghost-white
-  - `color-ghost-white`
+## color-on-baby-blue
+  - `color-baby-blue`
+  - `color-laser-lemon`
 
-## color-lavender
-  - `color-gunmetal`
-  - `color-on-lavender`
-  - `color-space`
-  - `color-better-space`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-paradise-pink
+  - `color-black-fogra`
+  - `color-on-paradise-pink`
 
-## color-on-lavender
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-corn`
+## color-on-paradise-pink
+  - `color-baby-blue`
+  - `color-paradise-pink`
+  - `color-laser-lemon`
+  - `color-caribbean-green`
+  - `color-hot-pink`
 
-## color-space
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-on-space`
-  - `color-corn`
+## color-laser-lemon
+  - `color-black-fogra`
+  - `color-on-baby-blue`
+  - `color-on-paradise-pink`
+  - `color-on-laser-lemon`
+  - `color-on-caribbean-green`
+  - `color-on-hot-pink`
 
-## color-on-space
-  - `color-gunmetal`
-  - `color-space`
-  - `color-better-space`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-on-laser-lemon
+  - `color-laser-lemon`
 
-## color-better-space
-  - `color-on-gunmetal`
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-on-space`
-  - `color-on-better-space`
-  - `color-corn`
+## color-caribbean-green
+  - `color-black-fogra`
+  - `color-on-paradise-pink`
+  - `color-on-caribbean-green`
+  - `color-on-hot-pink`
 
-## color-on-better-space
-  - `color-better-space`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-on-caribbean-green
+  - `color-baby-blue`
+  - `color-laser-lemon`
+  - `color-caribbean-green`
 
-## color-corn
-  - `color-gunmetal`
-  - `color-on-lavender`
-  - `color-space`
-  - `color-better-space`
-  - `color-on-corn`
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
+## color-hot-pink
+  - `color-black-fogra`
+  - `color-on-paradise-pink`
+  - `color-on-hot-pink`
 
-## color-on-corn
-  - `color-ghost-white`
-  - `color-corn`
-
-## color-red-salsa
-  - `color-on-red-salsa`
-
-## color-on-red-salsa
-  - `color-on-gunmetal`
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-on-space`
-  - `color-on-better-space`
-  - `color-corn`
-  - `color-red-salsa`
-  - `color-persian-green`
-
-## color-persian-green
-  - `color-on-red-salsa`
-  - `color-on-persian-green`
-
-## color-on-persian-green
-  - `color-on-gunmetal`
-  - `color-ghost-white`
-  - `color-lavender`
-  - `color-on-space`
-  - `color-on-better-space`
-  - `color-corn`
-  - `color-persian-green`
+## color-on-hot-pink
+  - `color-baby-blue`
+  - `color-laser-lemon`
+  - `color-caribbean-green`
+  - `color-hot-pink`

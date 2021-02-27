@@ -6,7 +6,7 @@
 
  code[class*="language-"],
  pre[class*="language-"] {
-   color: $color-ghost-white;
+   color: #fff;
    background: none;
    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
    text-align: left;
@@ -28,7 +28,7 @@
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-   background: $color-gunmetal;
+   background: $color-black-fogra;
  }
  
  /* Inline code */
@@ -46,7 +46,7 @@
  }
  
  .token.punctuation {
-   color: $color-lavender;
+   color: $color-baby-blue;
  }
  
  .token.property,

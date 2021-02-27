@@ -2,6 +2,7 @@
 layout: page.njk
 tags: featured
 title: Find the Union Between Two Arrays
+searchTags: ['union', 'array', 'shared', 'common']
 eleventyNavigation:
   key: Union
   parent: Arrays
@@ -17,13 +18,13 @@ This technique uses [`Set()`](https://developer.mozilla.org/en-US/docs/Web/JavaS
 <details open>
 <summary>JavaScript</summary>
 
-  ```javascript
-  // Find the Union
-  const union = (a, b) => Array.from(new Set([...a, ...b]));
+```javascript
+// Find the Union
+const union = (a, b) => Array.from(new Set([...a, ...b]));
 
-  // Usage
-  union([1, 2, 3], [4, 3, 2]); // = [1, 2, 3]
-  ```
+// Usage
+union([1, 2, 3], [4, 3, 2]); // = [1, 2, 3]
+```
 </details>
 
 <details>

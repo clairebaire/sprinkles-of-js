@@ -1,5 +1,9 @@
 .h-list {
   display: flex;
-  align-items: center;
+  align-items: last baseline;
   gap: 1em;
+}
+
+.h-list > * {
+  flex: 1 0 auto;
 }
