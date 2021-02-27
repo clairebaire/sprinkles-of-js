@@ -36,7 +36,7 @@ const submitSearch = (event) => {
   event.preventDefault();
   let searchValue = event.srcElement.elements[0].value;
 
-  fetch(`/.netlify/functions/search?=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
+  fetch(`/.netlify/functions/search?search=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
 }
 
 const formulateSearchResult = (json) => {
