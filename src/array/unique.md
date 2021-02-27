@@ -17,7 +17,7 @@ This uses the JS `Set()` to filter duplicate values, since `Set` only works with
 <details open>
   <summary>JavaScript</summary>
   
-  ```javascript
+```javascript
 // Function to find elements
 const uniqueElements = arr => [...new Set(arr)];
 
@@ -29,7 +29,7 @@ uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 <details>
   <summary>TypeScript</summary>
   
-  ```typescript
+```typescript
 // Function to find elements
 const uniqueElements = arr: [] => [...new Set(arr)];
 

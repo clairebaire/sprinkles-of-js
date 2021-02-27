@@ -1,0 +1,4 @@
+[build]
+  functions = 'functions' # must specify a functions folder for this to work
+[[plugins]]
+  package = 'netlify-plugin-search-index'
