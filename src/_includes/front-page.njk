@@ -47,6 +47,7 @@ const formulateSearchResult = (json) => {
       let temp = document.createElement('li');
       let link = document.createElement('a');
       link.href = item.path;
+      link.innerText = item.title;
       temp.append(link);
       toWrite.append(temp);
     })
