@@ -6,17 +6,11 @@ layout: index.njk
   <div class="hero">
     <span class="h1">🧁</span>
     <h1>Sprinkles of JS</h1>
+    <nav>
+      <a href="/search/">Search</a> | 
+      <a href="https://github.com/clairebaire/sprinkles-of-js">Github</a>
+    </nav>
   </div>
-  <form id="form">
-    <div class="h-list">
-      <label class="input">
-        Search by keyword
-        <input type="search" name="search">
-      </label>
-      <button class="btn">Search</button>
-    </div>
-  </form>
-  <div id="results"></div>
 </header>
 <main class="sprinkles__main">
   <h2>Featured Items</h2>
@@ -29,37 +23,3 @@ layout: index.njk
   </ul>
   {{ content | safe }}
 </main>
-
-
-<script>
-const submitSearch = (event) => {
-  event.preventDefault();
-  let searchValue = event.srcElement.elements[0].value;
-  let results = document.querySelector('#results');
-  results.innerHTML = "Loading...";
-  fetch(`/.netlify/functions/search?search=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
-}
-
-const formulateSearchResult = (json = null) => {
-  let results = document.querySelector('#results');
-  let toWrite = document.createElement('ul');
-  if (json) {
-    json.forEach(item => {
-      let temp = document.createElement('li');
-      let link = document.createElement('a');
-      link.href = item.path;
-      link.innerText = item.title;
-      temp.append(link);
-      toWrite.append(temp);
-    })
-
-    results.innerHTML = "";
-    results.append(toWrite);
-  } else {
-    results.innerText = "No results to display!";
-  }
-}
-
-const form = document.querySelector('#form')
-form.onsubmit = submitSearch
-</script>

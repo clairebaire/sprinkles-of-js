@@ -1,0 +1,44 @@
+<form id="form">
+  <div class="h-list">
+    <label class="input">
+      Search by keyword
+      <input type="search" name="search">
+    </label>
+    <button class="btn">Search</button>
+  </div>
+</form>
+<div id="results"></div>
+
+<script>
+  const submitSearch = (event) => {
+    event.preventDefault();
+    let searchValue = event.srcElement.elements[0].value;
+    let results = document.querySelector('#results');
+    results.innerHTML = "Loading...";
+    fetch(`/.netlify/functions/search?search=${searchValue}`).then((data) => data.json()).then((json) => formulateSearchResult(json))
+  }
+
+  const formulateSearchResult = (json = null) => {
+    let results = document.querySelector('#results');
+    let toWrite = document.createElement('ul');
+    json = [...new Set(json)];
+    if (json) {
+      json.forEach(item => {
+        let temp = document.createElement('li');
+        let link = document.createElement('a');
+        link.href = item.path;
+        link.innerText = item.title;
+        temp.append(link);
+        toWrite.append(temp);
+      })
+
+      results.innerHTML = "";
+      results.append(toWrite);
+    } else {
+      results.innerText = "No results to display!";
+    }
+  }
+
+  const form = document.querySelector('#form')
+  form.onsubmit = submitSearch
+</script>

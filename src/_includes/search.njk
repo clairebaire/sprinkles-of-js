@@ -1,5 +1,19 @@
 ---
-layout: page.njk
+layout: index.njk
 ---
+<header class="sprinkles__header">
+  <div class="split">
+    <div>
+      🧁 <a href="/">Sprinkles of JS</a>
+    </div>
+    <div>
+      <nav class="h-list">
+        <a href="/search">Search</a>
+        <a href="https://github.com">Github</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<h1>Search for ✨</h1>
 
-results
+{% include '_search.njk' %}

@@ -3,7 +3,7 @@ layout: page.njk
 tags: featured
 title: Remove Duplicate Values in an Array
 eleventyNavigation:
-  key: Remove Duplicate Values
+  key: Remove Duplicates
   parent: Arrays
 ---
 # {{ title }}

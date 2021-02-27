@@ -8,16 +8,38 @@ layout: index.njk
       🧁 <a href="/">Sprinkles of JS</a>
     </div>
     <div>
-      <div class="h-list">
-        <label class="input input--small">
-          <span class="input__label">Search by keyword</span>
-          <input type="search" placeholder="search...">
-        </label>
-        <span>Github</span>
-      </div>
+      <nav class="h-list">
+        <a href="/search">Search</a>
+        <a href="https://github.com/clairebaire/sprinkles-of-js">Github</a>
+      </nav>
     </div>
   </div>
 </header>
-<main class="sprinkles__main">
-  {{ content | safe }}
-</main>
+<div class="sprinkles__content">
+  <aside class="sprinkles__content__aside">
+    {% set navPages = collections.all | eleventyNavigation %}
+    {% macro renderNavListItem(entry, child) -%}
+    <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+      {%- if child === true -%}
+        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+      {%- endif -%}
+      {%- if child === false -%}
+        <span class="text text--pink">{{ entry.title }}</span>
+      {%- endif -%}
+      {%- if entry.children.length -%}
+        <ul>
+          {%- for child in entry.children %}{{ renderNavListItem(child, true) }}{% endfor -%}
+        </ul>
+      {%- endif -%}
+      </li>
+    {%- endmacro %}
+
+    <ul>
+    {%- for entry in navPages %}{{ renderNavListItem(entry, false) }}{%- endfor -%}
+    </ul>
+  </aside>
+  <main class="sprinkles__content__main">
+    {{ content | safe }}
+  </main>
+</div>
+

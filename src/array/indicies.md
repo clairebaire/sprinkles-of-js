@@ -4,12 +4,12 @@ tags: featured
 title: Get Indicies of Each Occurrence
 searchTags: ['index', 'array', 'search']
 eleventyNavigation:
-  key: Get Indicies of Each Occurrence
+  key: Get Indicies of Item
   parent: Arrays
 ---
 # {{ title }}
 
-Want to remove duplicates from your array?
+Want to return the indicies of an item in an array?
 
 <h2 class="h5">Explanation</h2>
 
