@@ -41,8 +41,18 @@ const submitSearch = (event) => {
 
 const formulateSearchResult = (json) => {
   let results = document.querySelector('#results');
+  let toWrite = document.createElement('ul');
   if (json) {
-    json.forEach(item => console.log(item))
+    json.forEach(item => {
+      let temp = document.createElement('li');
+      let link = document.createElement('a');
+      link.href = item.path;
+      temp.append(link);
+      toWrite.append(temp);
+    })
+
+    results.innerHTML = "";
+    results.append(toWrite);
   } else {
     results.innerText = "No results to display!";
   }
