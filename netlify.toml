@@ -2,3 +2,5 @@
   functions = 'functions' # must specify a functions folder for this to work
 [[plugins]]
   package = 'netlify-plugin-search-index'
+    [plugins.inputs]
+    exclude = ['/array/index.html', '/date/index.html']
