@@ -1,6 +1,5 @@
 ---
 layout: page.njk
-tags: featured
 title: Check the Validity of a Date
 eleventyNavigation:
   key: Check Date Validity
