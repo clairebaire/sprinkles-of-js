@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 tags: featured
-title: Remove Duplicate Values in an Array
+title: Remove Duplicate Values from an Array
 description: This small function removes duplicate values from an array using a cool technique with another JavaScript built-in object.
 eleventyNavigation:
   key: Remove Duplicates

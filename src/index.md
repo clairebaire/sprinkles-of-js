@@ -1,8 +1,10 @@
 ---
-layout: front-page.njk
+layout: index.njk
 title: Sprinkles of JS
 ---
 
+Coming soon, yo.
+<!-- 
 ## Why?
 Let's say the cupcake (🧁) is a metaphor. The cupcake is a library. The sprinkles are what you _really_ want. You can have the cupcake later.
 
@@ -13,4 +15,4 @@ Framework this, library that. What if you want to do a simple task in JavaScript
 This site is for you. Definitely inspired by both [@5t3ph's SmolCSS](https://smolcss.dev) and [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
 
 ## Note
-Sprinkles does not condone using Internet Explorer anymore. If you have to, there are notes for specific use cases in each sprinkle, but for the most part - even this website isn't very compatible with it.
+Sprinkles does not condone using Internet Explorer anymore. If you have to, there are notes for specific use cases in each sprinkle, but for the most part - even this website isn't very compatible with it. -->

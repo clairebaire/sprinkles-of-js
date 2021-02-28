@@ -2,7 +2,6 @@
 layout: page.njk
 tags: featured
 title: Get Indicies of Each Occurrence
-eleventyExcludeFromCollections: true
 description: You want to find where something is in an array. Maybe you want to see how many times it comes up.
 eleventyNavigation:
   key: Get Indicies of Item
@@ -16,16 +15,22 @@ Want to return the indicies of an item in an array?
 
 This uses a combination of [`Array.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) and the `...` (spread) operator to figure out which index the value passed in is at, and returns a new array of the indicies.
 
+The example below is not as succinct as it could be. However, to preserve readability, return statements were added. David Walsh [discusses readability vs "short code"](https://davidwalsh.name/javascript-short-code) in a bit outdated post from 2010.
+
 <details open>
   <summary>JavaScript</summary>
   
 ```javascript
-// Find All Indicies
-const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+// Get the indicies of the item in question
+const getIndicies = (array, value) => {
+  return arr.reduce((accumulation, item, i) => {
+    return (item === value ? [...accumulation, i] : accumulation), []
+  });
+}
 
 // Usage
-indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
-indexOfAll([1, 2, 3], 4); // []
+getIndicies([1, 2, 3, 1, 2, 3], 1); // [0,3]
+getIndicies([1, 2, 3], 4); // []
 ```
 </details>
 
@@ -33,12 +38,12 @@ indexOfAll([1, 2, 3], 4); // []
   <summary>TypeScript</summary>
   
 ```typescript
-// Find All Indicies
-const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+// Get the indicies of the item in question
+const getIndicies = (array: U[], value: U) => arr.reduce((accumulation, item, i) => (item === value ? [...accumulation, i] : accumulation), []);
 
 // Usage
-indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
-indexOfAll([1, 2, 3], 4); // []
+getIndicies([1, 2, 3, 1, 2, 3], 1); // [0,3]
+getIndicies([1, 2, 3], 4); // []
 ```
 </details>
 
