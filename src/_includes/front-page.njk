@@ -13,13 +13,26 @@ layout: index.njk
   </div>
 </header>
 <main class="sprinkles__main">
-  <h2>Featured Items</h2>
-    <ul>
-    {%- for post in collections.featured -%}
-      <li>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </li>
-    {%- endfor -%}
+  <h2>Sprinkle Directory</h2>
+  {% set navPages = collections.all | eleventyNavigation %}
+  {% macro renderNavListItem(entry, child) -%}
+  <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+    {%- if child === true -%}
+      <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+    {%- endif -%}
+    {%- if child === false -%}
+      <span class="text text--pink">{{ entry.title }}</span>
+    {%- endif -%}
+    {%- if entry.children.length -%}
+      <ul>
+        {%- for child in entry.children %}{{ renderNavListItem(child, true) }}{% endfor -%}
+      </ul>
+    {%- endif -%}
+    </li>
+  {%- endmacro %}
+
+  <ul class="nav-pages">
+  {%- for entry in navPages %}{{ renderNavListItem(entry, false) }}{%- endfor -%}
   </ul>
   {{ content | safe }}
 </main>

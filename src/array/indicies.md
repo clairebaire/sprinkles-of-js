@@ -2,6 +2,7 @@
 layout: page.njk
 tags: featured
 title: Get Indicies of Each Occurrence
+eleventyExcludeFromCollections: true
 description: You want to find where something is in an array. Maybe you want to see how many times it comes up.
 eleventyNavigation:
   key: Get Indicies of Item

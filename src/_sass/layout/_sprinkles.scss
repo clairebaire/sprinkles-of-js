@@ -97,7 +97,7 @@
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(12em, 16em) fit-content(56em);
+    grid-auto-columns: minmax(12em, 16em) minmax(38em, 100%);
   }
 
   .sprinkles__content__aside {

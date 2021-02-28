@@ -1,0 +1,11 @@
+.nav-pages {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  ul {
+    list-style: none;
+    padding: 0 1rem;
+  }
+}

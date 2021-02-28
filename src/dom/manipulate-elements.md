@@ -2,6 +2,7 @@
 layout: page.njk
 tags: dom
 title: Manipulate DOM Elements
+eleventyExcludeFromCollections: true
 eleventyNavigation:
   key: Manipulate Elements
   parent: DOM

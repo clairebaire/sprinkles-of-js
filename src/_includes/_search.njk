@@ -44,7 +44,7 @@
   const replaceStuff = (str, substr) => {
     const result = str.replace(substr, '');
     const final = result.trim().split(' ').filter(a => a.trim() != "");
-    return final.replaceAll(',', ' ');
+    return final.toString().replaceAll(',', ' ');
   }
 
   const form = document.querySelector('#form')

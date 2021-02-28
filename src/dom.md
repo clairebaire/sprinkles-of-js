@@ -1,8 +1,8 @@
 ---
 layout: page.njk
-title: Date stuff.
+title: DOM stuff.
 permalink: false
 eleventyExcludeFromCollections: true
 eleventyNavigation:
-  key: Date
+  key: DOM
 ---
