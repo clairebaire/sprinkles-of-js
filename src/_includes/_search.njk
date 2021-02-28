@@ -27,8 +27,9 @@
         let temp = document.createElement('li');
         let link = document.createElement('a');
         link.href = item.path;
+        // Make this better
         link.innerText = replaceStuff(item.title, '| Sprinkles of JS');
-        temp.innerText = replaceStuff(item.description, {{ meta.siteDescription }});
+        temp.innerText = replaceStuff(item.description, "Sprinkles of JavaScript to brighten your performance load and your understanding of JS.");
         temp.prepend(link);
         toWrite.append(temp);
       })
