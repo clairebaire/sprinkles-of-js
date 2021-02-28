@@ -27,9 +27,9 @@
         let temp = document.createElement('li');
         let link = document.createElement('a');
         link.href = item.path;
-        link.innerText = item.title;
-        temp.innerText = item.description;
-        temp.append(link);
+        link.innerText = replaceStuff(item.title, '| Sprinkles of JS');
+        temp.innerText = replaceStuff(item.description, {{ meta.siteDescription }});
+        temp.prepend(link);
         toWrite.append(temp);
       })
 
@@ -38,6 +38,12 @@
     } else {
       results.innerText = "No results to display!";
     }
+  }
+
+  const replaceStuff = (str, substr) => {
+    const result = str.replace(substr, '');
+    const final = result.trim().split(' ').filter(a => a.trim() != "");
+    return final;
   }
 
   const form = document.querySelector('#form')
