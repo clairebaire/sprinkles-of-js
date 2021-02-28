@@ -24,7 +24,7 @@ body {
   display: flex;
   margin: 0;
   background-color: $color-black-fogra;
-  color: $color-on-black-fogra;
+  color: lighten($color: $color-on-black-fogra, $amount: 30);
 }
 
 h1, h2, h3, h4, h5,

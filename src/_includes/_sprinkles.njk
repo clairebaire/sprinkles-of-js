@@ -1,0 +1,42 @@
+<div id="sprinkles"></div>
+
+<script>
+  const desktop = window.matchMedia('(min-width: 42em)').matches;
+  const createSprinkles = (number) => {
+    const sprinkles = document.querySelector('#sprinkles');
+    for(let i = 0; i < number; i++) {
+      let sprinkle = document.createElement('div');
+      sprinkle.id = `s${i}`;
+      sprinkle = styleSprinkle(sprinkle);
+      sprinkles.append(sprinkle);
+    }
+  }
+
+  const styleSprinkle = (el) => {
+    let x;
+    let y;
+    if (desktop) {
+      x = randomNumber(0, 5);
+      y = randomNumber(0, 100);
+    } else {
+      x = randomNumber(0, 100);
+      y = randomNumber(0, 5);
+    }
+    const deg = randomNumber(-60, 60);
+    const color = randomHsl();
+    
+    el.style.background = `linear-gradient(to right, ${color} 0%, #333333aa 100%)`
+    el.style.transform = `translate(${x}vw, ${y}vh) rotate(${deg}deg)`
+    return el;
+  }
+    
+  const randomNumber = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  const randomHsl = () => `hsla(${Math.random() * 360}, 100%, 90%, 1)`;
+
+  createSprinkles(desktop ? 50 : 25)
+</script>

@@ -1,7 +1,9 @@
-@media (min-width: 48em) {
-  .split {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split > * {
+  flex: 0 1 auto;
 }
