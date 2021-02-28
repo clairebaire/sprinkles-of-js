@@ -4,6 +4,10 @@ a {
   text-underline-offset: 2px;
   color: $color-baby-blue;
 
+  &:visited {
+    color: $color-baby-blue;
+  }
+
   &:focus {
     outline: 1px solid $color-laser-lemon;
     outline-offset: 2px;
@@ -11,6 +15,25 @@ a {
 
   &:hover {
     color: $color-hot-pink;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    color: $color-blue-pigment;
+
+    &:visited {
+      color: $color-blue-pigment;
+    }
+
+    &:focus {
+      outline: 1px solid $color-jazzberry-jam;
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: $color-jazzberry-jam;
+    }
   }
 }
 
@@ -22,6 +45,14 @@ a {
   &--emoji {
     text-decoration: none;
     font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .text {
+    &--pink {
+      color: $color-jazzberry-jam;
+    }
   }
 }
 

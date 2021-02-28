@@ -27,3 +27,9 @@ details {
     border-bottom-right-radius: .5em;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  details {
+    border: 0;
+  }
+}

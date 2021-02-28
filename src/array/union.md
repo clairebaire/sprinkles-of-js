@@ -2,7 +2,7 @@
 layout: page.njk
 tags: featured
 title: Find the Union Between Two Arrays
-searchTags: ['union', 'array', 'shared', 'common']
+description: Finding the common items between two arrays is very easy with this small function.
 eleventyNavigation:
   key: Union
   parent: Arrays

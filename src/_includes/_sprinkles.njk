@@ -13,20 +13,13 @@
   }
 
   const styleSprinkle = (el) => {
-    let x;
-    let y;
-    if (desktop) {
-      x = randomNumber(0, 5);
-      y = randomNumber(0, 100);
-    } else {
-      x = randomNumber(0, 100);
-      y = randomNumber(0, 5);
-    }
+    let x = randomNumber(0, document.body.clientWidth);
+    let y = randomNumber(0, document.body.clientHeight);
     const deg = randomNumber(-60, 60);
     const color = randomHsl();
     
-    el.style.background = `linear-gradient(to right, ${color} 0%, #333333aa 100%)`
-    el.style.transform = `translate(${x}vw, ${y}vh) rotate(${deg}deg)`
+    el.style.background = `linear-gradient(to right, ${color} 0%, #33333333 100%)`;
+    el.style.transform = `translate(${x}px, ${y}px) rotate(${deg}deg)`;
     return el;
   }
     
@@ -36,7 +29,7 @@
     return Math.floor(Math.random() * (max - min) + min);
   }
 
-  const randomHsl = () => `hsla(${Math.random() * 360}, 100%, 90%, 1)`;
+  const randomHsl = () => `hsla(${Math.random() * 360}, 100%, 70%, .5)`;
 
-  createSprinkles(desktop ? 50 : 25)
+  setTimeout(() => createSprinkles(desktop ? 200 : 200));
 </script>

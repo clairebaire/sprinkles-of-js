@@ -28,6 +28,7 @@
         let link = document.createElement('a');
         link.href = item.path;
         link.innerText = item.title;
+        temp.innerText = item.description;
         temp.append(link);
         toWrite.append(temp);
       })

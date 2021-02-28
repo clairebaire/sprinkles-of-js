@@ -17,6 +17,10 @@ module.exports = [
     color: "#f7ff58",
   },
   {
+    name: "sea-green",
+    color: "#018D63"
+  },
+  {
     name: "caribbean-green",
     color: "#06d6a0"
   },
@@ -24,4 +28,12 @@ module.exports = [
     name: "hot-pink",
     color: "#ff66b3"
   },
+  {
+    name: "jazzberry-jam",
+    color: "#B4186B"
+  },
+  {
+    name: "blue-pigment",
+    color: "#47329A"
+  }
 ];

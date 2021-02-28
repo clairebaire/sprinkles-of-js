@@ -12,6 +12,5 @@ Framework this, library that. What if you want to do a simple task in JavaScript
 
 This site is for you. Definitely inspired by both [@5t3ph's SmolCSS](https://smolcss.dev) and [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
 
-## Can I contribute?
-
-Sure! (rules TBD)
+## Note
+Sprinkles does not condone using Internet Explorer anymore. If you have to, there are notes for specific use cases in each sprinkle, but for the most part - even this website isn't very compatible with it.

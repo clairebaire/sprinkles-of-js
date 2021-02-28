@@ -1,9 +1,14 @@
 code {
   color: $color-caribbean-green;
+  background-color: transparentize($color: $color-black-fogra, $amount: .3);
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
   padding: 1px 3px;
   margin: -1px;
+}
+
+code:not(code[class]) {
+  font-weight: bold;
 }
 
 a code {

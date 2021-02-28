@@ -5,14 +5,25 @@
   border-radius: 8px;
   margin: 0;
   max-width: 100%;
-  height: 5ex;
-  background-color: transparent;
-  color: $color-caribbean-green;
+  height: 4ex;
+  background-color: $color-sea-green;
+  color: #fff;
   font-size: 1.125rem;
 
   &:focus,
   &:active {
     outline: 1px solid $color-laser-lemon;
     outline-offset: -2px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .btn {
+    border-color: $color-sea-green;
+
+    &:focus,
+    &:active {
+      outline-color: $color-sea-green;
+    }
   }
 }

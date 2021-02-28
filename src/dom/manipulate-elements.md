@@ -1,15 +1,14 @@
 ---
 layout: page.njk
-tags: featured
-title: Get Indicies of Each Occurrence
-description: You want to find where something is in an array. Maybe you want to see how many times it comes up.
+tags: dom
+title: Manipulate DOM Elements
 eleventyNavigation:
-  key: Get Indicies of Item
-  parent: Arrays
+  key: Manipulate Elements
+  parent: DOM
 ---
 # {{ title }}
 
-Want to return the indicies of an item in an array?
+In modern browsers, you can iterate over the result of `document.querySelectorAll()` (which is a `NodeList`) with a familiar Array method, `forEach()`. This is a _static_ version of the elements though - so this is good for a "point in time" usage of the DOM elements - say you want to note which elements were on the page at one time for example.
 
 <h2 class="h5">Explanation</h2>
 

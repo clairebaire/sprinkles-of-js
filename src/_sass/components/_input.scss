@@ -10,15 +10,15 @@
     color: $color-laser-lemon;
     border: 1px solid $color-caribbean-green;
     border-radius: 4px;
-    height: 5ex;
+    height: 4ex;
     width: 100%;
     padding: .5rem;
     font-size: 1.125rem;
   }
 
   input:focus {
-    outline: 1px solid $color-laser-lemon;
-    outline-offset: -2px;
+    outline: 2px solid $color-laser-lemon;
+    border-radius: 0;
   }
 
   &--small {
@@ -32,6 +32,23 @@
     input {
       height: 4ex;
       padding: 0;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .input {
+    .input__label {
+      color: $color-sea-green;
+    }
+
+    input {
+      border-color: $color-sea-green;
+      color: $color-black-fogra;
+    }
+
+    input:focus {
+      outline-color: $color-sea-green;
     }
   }
 }
